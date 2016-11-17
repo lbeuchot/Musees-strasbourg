@@ -5,12 +5,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musées de Strasbourg</title>
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
   <body>
 
-    <header id="header" style="background-image:url(../assets/img/background.png);">
+    <header id="header" class="row" style="background-image:url(../assets/img/background.png); background-repeat: no-repeat;">
 
       <div class="row">
         <section id="logo">
@@ -18,9 +17,9 @@
         </section>
         <nav class="small-8 large-8 columns">
           <ul class="menu vertical">
-            <li><a href="">ACTUALITÉS/AGENDA <i class="fa fa-search" aria-hidden="true"></i>FR</a></li>
-            <li><a href="">MUSÉES</a></li>
-            <li><a href="">INFORMATIONS</a></li>
+            <li id="first"><a href="#">ACTUALITÉS/AGENDA <i class="fa fa-search" aria-hidden="true"></i>FR</a></li>
+            <li id="second"><a href="#">MUSÉES</a></li>
+            <li id="third"><a href="#">INFORMATIONS</a></li>
           </ul>
         </nav>
       </div>
@@ -33,55 +32,54 @@
       </section>
     </header>
 
-    <section class="documentsections">
-
+    <section id="GALLERIE">
       <div class="row">
         <div class="small-12 medium-6 large-4 columns">
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img1.png" width="410" height="230" alt=""></a>
           <figcaption>AUBETTE 1928</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns">
           <figcaption></figcaption>
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img2.png" width="410" height="230" alt=""></a>
           <figcaption>CABINET DES ESTAMPES & DES DESSINS</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns">
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img3.png" width="410" height="230" alt=""></a>
           <figcaption>MUSÉE ALSACIEN</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns">
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img4.png" width="410" height="230" alt=""></a>
           <figcaption>MUSÉE ARCHÉOLOGIQUE</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns">
           <figcaption></figcaption>
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img5.png" width="410" height="230" alt=""></a>
           <figcaption>MUSÉE DES ARTS DÉCORATIFS</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns">
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img6.png" width="410" height="230" alt=""></a>
           <figcaption>MUSÉE D'ART MODERNE & COTEMPORAIN</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns">
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img7.png" width="410" height="230" alt=""></a>
           <figcaption>MUSÉE DES BEAUX ARTS</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns">
           <figcaption></figcaption>
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img8.png" width="410" height="230" alt=""></a>
           <figcaption>MUSÉE HISTORIQUE</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns">
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img9.png" width="410" height="230" alt=""></a>
           <figcaption>MUSÉE DE L'OEUVRE-NOTRE-DAME</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns">
           <figcaption></figcaption>
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img10.png" width="410" height="230" alt=""></a>
           <figcaption>MUSÉE TOMI UNGERER</figcaption>
         </div>
         <div class="small-12 medium-6 large-4 columns end">
-          <img src="http://placehold.it/410x230" alt="">
+          <a href="#"><img src="../assets/img/img11.png" width="410" height="230" alt=""></a>
           <figcaption>MUSÉE ZOOLOGIQUE</figcaption>
         </div>
       </div>
@@ -92,16 +90,20 @@
       <h3>INSCRIVEZ-VOUS À LA NEWSLETTER DES MUSÉES !</h3>
     </div>
     <div class="small-8 medium-4 large-2 columns">
-      <input type="email" name="email" placeholder="E-MAIL">
+      <input id="email" type="email" name="email" placeholder="E-MAIL">
     </div>
     <div class="small-4 medium-2 large-1 columns">
-      <input class="secondary hollow button" type="submit">
+      <input id="submit" class="secondary hollow button" type="submit">
     </div>
     <div class="small-12 medium-12 large-4 columns">
-      <h3>PUBLICATIONS DES MUSÉES | ESPACE PRESSE</h3>
+      <h3>
+        <a href="">PUBLICATIONS DES MUSÉES </a>| <a href="">ESPACE PRESSE</a>
+      </h3>
     </div>
     <div class="small-12 medium-12 large-12 columns">
-      <h4>ACCUEIL | CONTACT | PLAN DU SITE | MENTIONS LÉGALES</h4>
+      <h4>
+        <a href="">ACCUEIL</a> | <a href="">CONTACT</a> | <a href="">PLAN DU SITE</a> | <a href="">MENTIONS LÉGALES</a>
+      </h4>
     </div>
   </footer>
 
